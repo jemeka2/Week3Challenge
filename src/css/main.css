@@ -1,0 +1,53 @@
+body{
+    background-color: #7c818c;
+}
+/*Main Page*/
+.carousel{
+    top: 100px;
+}
+.card{
+    margin: auto;
+    max-width: 1400px;
+    max-height: 600px;
+}
+#homeTitle{
+    color: white;
+    background-color: rgba(0,0,0,0.4);
+    border: 3px solid white;
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+    width: 50%;
+    height: 75px;
+}
+#cardHome img{
+    filter: blur(3px);
+}
+.card-img-overlay{
+    color: white;
+    background-color: rgba(0,0,0,0.4);
+    border: 3px solid white;
+}
+#extraArticles{
+    margin-top: 50px;
+}
+#longCol img{
+    width: 1290px;
+    height: 600px;
+}
+
+/*Profile Page*/
+#profileTitle{
+    margin: auto;
+    text-align: center;
+    margin-top: 50px;
+    color: white;
+    background-color: rgba(0,0,0,0.4);
+    border: 3px solid white;
+    width: 50%;
+}
+h3{
+    color: white;
+    margin-left: 75px;
+}
+

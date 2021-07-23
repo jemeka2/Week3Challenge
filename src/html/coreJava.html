@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   <link rel="stylesheet" href="../css/coreJava.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Tech Blog</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="profile.html">Profiles</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Articles
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="github.html">GitHub</a></li>
+                        <li><a class="dropdown-item" href="programDesign.html">Program Design & Algorithms</a></li>
+                        <li><a class="dropdown-item" href="coreJava.html">Core Java</a></li>
+                        <li><a class="dropdown-item" href="OOJ.html">Object-Oriented Java</a></li>
+                        <li><a class="dropdown-item" href="html.html">HTML/CSS/Bootstrap</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+<div class="superContainer">
+    <div class="container" id="images">
+        <h4 id="clickArticle">Click the Article</h4>
+        <div class="row">
+            <div class="col">
+                <div class="card bg-dark text-white" onclick="showArticle1()">
+                    <img src="https://blogs.oracle.com/content/published/api/v1.1/assets/CONT8EB3988A80D94328AA446514BE52D351/Medium?cb=_cache_ac43&format=jpg&channelToken=7e01516d535048508dfbd81a6ea0d1ed" class="card-img" alt="..." >
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">Announcing Java Management Service</h5>
+                        <p class="card-text">Today we are introducing a new Oracle Cloud Infrastructure (OCI) native service to help manage Java runtimes and applications on-premises or on any cloud. Java Management Service (JMS) is now generally available (GA).</p>
+                        <p class="card-text">June 8, 2021</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card bg-dark text-white" onclick="showArticle2()">
+                    <img src="https://blogs.oracle.com/content/published/api/v1.1/assets/CONT78BBCD027089413DB07BBACCF43DFAB3/Medium?cb=_cache_116b&format=jpg&channelToken=7e01516d535048508dfbd81a6ea0d1ed" class="card-img" alt="...">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text">Last updated 3 mins ago</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="article1">
+        <h1> Announcing Java Management Service</h1>
+        <p>
+            Today we are introducing a new Oracle Cloud Infrastructure (OCI) native service to help manage Java runtimes and applications on-premises or on any cloud. Java Management Service (JMS) is now generally available (GA).
+        </p>
+
+        <p>
+            Oracle is the technological leader and steward of the Java ecosystem. Java is the #1 language for cloud development and deployment and has 30 billion active cloud Java Virtual Machines and over 50 billion total JVMs globally. Projects using Java are 2.5x more likely to be ahead of schedule compared to non-Java projects. *
+        </p>
+
+        <p>
+            With Java’s ubiquity and broad usage come significant management challenges. Java Management Service is designed to bring relief in this area and many others
+        </p>
+
+        <p>
+            JMS offers a single pane of glass to manage Java deployments across the enterprise, answering questions such as:
+        </p>
+
+        <ul>
+            <li>What are all the Java versions installed on my environment?</li>
+            <li>What versions of Java are running in development and production?</li>
+            <li>Which JDK distribution is each of these using?</li>
+            <li>Are any unplanned Java applications running?</li>
+            <li>Are all my installed Java versions up to date with the latest security patches?</li>
+        </ul>
+        <p>
+            JMS will provide continuous insight based on telemetry data from the JVM to analyze security, performance, compliance, and efficiency metrics. For example, normally cryptography usage is a black box; expired certificates or disabled algorithms are often found only when something breaks or after a malicious attack.
+        </p>
+
+        <p>
+            Java Management Service is an included feature for Oracle Java SE customers. While there is no additional subscription cost to JMS, customers running it are billed for any usage beyond the OCI Monitoring free tier which supports several hundred million data points.
+        </p>
+        <br><br>
+        <img src="https://blogs.oracle.com/content/published/api/v1.1/assets/CONT119D694A1A2943B6AB6C5276AD6AA98E/native?cb=_cache_ac43&channelToken=7e01516d535048508dfbd81a6ea0d1ed">
+        <br><br>
+        <p>Figure 1: Architecture overview</p>
+        <p>
+            JMS can track Java usage running on OCI, on on-premises desktops, laptops and servers, and third-party cloud services. It monitors the Java Development Kit (JDK), Java Runtime Environment (JRE), and GraalVM. A JMS agent installed on the managed instances collects Java usage telemetry data. Telemetry data is stored in the customer tenancy for privacy protection; there is no Oracle access beyond processing the data.
+        </p>
+
+        <p>
+            The OCI agent is installed in the customer’s tenancy for monitoring and producing reports. Only the customer can see the reports. Oracle cannot see the data and does not charge compute time for the use of the service, only for OCI Monitoring and only when use exceeds the OCI Monitoring free tier thresholds.
+        </p>
+
+        <p>
+            The following screen shots are a view of what this initial release of Java Management Service provides.
+        </p>
+        <br><br>
+        <a href="https://blogs.oracle.com/java/post/announcing-java-management-service">Source: Oracle Blog</a>
+        <br>
+        <a href="https://blogs.oracle.com/java/authors/Blog-Author/CORE0924142CAE18459B9C6C291D6DC3D8CB/alexandra-huff">Author: Alexandra Huff</a>
+    </div>
+    <div id="article2">
+        <h1>Sharing the Code - Engagement from 25 Years of Java</h1>
+        <p>
+            2020… what a year!
+
+            December presents the perfect opportunity to take a look back at so much that transpired in the world of Java during the course of 2020.
+        </p>
+        <p>
+            One of the biggest stories is that Java turned 25 on May 23 of this year. Global in-person celebration plans were transformed into a series of online events as concerns for health and safety took precedence, but Java enthusiasm remained very high despite not being able to mingle in person. We introduced the MovedByJava site and theme, and used this new platform to host the Java 25th birthday celebration with participation from luminaries and long-time Java experts around the world.
+        </p>
+        <p>
+            The festivities included a friendly competition, Best of the JDK Feature Face-Off, an inspirational 36-second introductory video to The 25 Greatest Java Apps Ever Written, and an engaging Faces of Java Innovation video – see how many Java friends, colleagues and evangelists you recognize! StackOverflow interviewed Georges Saab, VP of Oracle’s Java Platform Group in the podcast Java at 25: Past, Present, and Future. We also used this opportunity to update the Java timeline, a retrospective look at some key dates in the life of this venerable language, and to introduce a new technical blog, inside.java.
+        </p>
+        <p>
+            Analysts were full of reflection and commentary on this important milestone. Omdia looked at how Java coexists with new and emerging programming languages in the article What's next for the original “write once, run anywhere” programming language? IDC took another approach, with an historical perspective in the article, Taking Stock of Java's Contributions to Development and Digital Transformation, and they also joined us for a webcast on Java SE in the Enterprise – IDC's View on Innovation and Open Source. Wikibon examined the cost savings possible for midsized enterprises with the purchase of a Java SE Subscription vs a do-it-yourself approach to upgrading to the latest version of Java in their paper, Java for Mid-sized Enterprises, and VDC Research reported on the findings from their 2020 survey in Addressing Next Generation Application Development with Java. Some of these findings are also summarized in the blog post, Java in 2020. Manish Gupta, VP Java and GraalVM Marketing and Donald Smith, Senior Director of Java Product Development were interviewed in theCUBE Analyst Power Panel on Java's relevance for modern enterprises, and Gartner published the paper “Java – Language of the Enterprise” exclusively for their subscribers.
+        </p>
+        <p>
+            This resulted in copious press attention and more than 180 articles to date - far too many to list in full, but here are a few that ran in May: Java at 25, InfoQ;  Java programming language celebrates 25 years, InfoWorld; How Java helps deliver the groceries, Computer Weekly; 25 years of Java: preparation for the data-driven third act, Jaxenter;  Celebrating Java Turning 25, Chinese Software Developer Network; Happy 25th birthday, Java!, Beta News; and Ocado Technology on why it uses Java to control its robotic swarms, TechHQ.
+        </p>
+        <p>
+            As part of the standard six-month release cadence for each Java release, this year saw the release of Java 14 in March, and Java 15 in September, including a Developer Live event in which Oracle’s Java product management team gave full-transparency detailed updates, as is the norm, on features under development such as Panama, Amber, Loom and Valhalla. Watch this segment of the keynote for a summary of these. For technical details on these projects, please visit:
+        </p>
+        <ul>
+            <li><a href="http://openjdk.java.net/projects/amber/"> Project Amber</a></li>
+            <li><a href="http://jdk.java.net/loom/">Project Loom</a></li>
+            <li><a href="http://jdk.java.net/panama/">Project Panama</a></li>
+            <li><a href="http://jdk.java.net/valhalla/">Project Valhalla</a></li>
+        </ul>
+        <p>
+            As the Java ecosystem continues to thrive, enterprises around the world in both private and public sector continue to invest in Java, including in the commercial offering from Oracle, Java SE Subscription. Thousands of customers choose to run on this trusted platform with professional support around the clock in 17 languages for fast fixes and mission-critical applications, access to performance, stability, and security updates and Java SE versions past end of public updates directly from the stewards of Java, access to critical bug fixes before they are included in publicly available releases, and much more.
+        </p>
+        <p>
+            We launched two new webinar series – one covering Java topics of interest, and another on GraalVM Enterprise, plus a hands-on-labs series for GraalVM. And we closed out the year with a fun webcast hosted by Sharat Chander, Senior Director of Java Product Management, interviewing some long-time Java users and community members on Why Java Matters to them. This session included lively interaction with the attendees via Q&A. Let us know if you would like to participate in a future webinar and share your Java tips, hints and best practices!
+        </p>
+        <p>
+            Another way to share your enthusiasm for Java is by submitting a review through third-party TrustRadius. Your candid feedback is very useful in helping others understand the value of the platform, and the importance of this most popular language.
+        </p>
+        <p>Here's to more exciting news coming in 2021 - stay tuned, you'll be glad you did! </p>
+        <br><br>
+        <a href="https://blogs.oracle.com/java/post/announcing-java-management-service">Source: Oracle Blog</a>
+        <br>
+        <a href="https://blogs.oracle.com/java/authors/Blog-Author/CORE0924142CAE18459B9C6C291D6DC3D8CB/alexandra-huff">Author: Alexandra Huff</a>
+
+    </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+<script src="../js/coreJavaPage.js"></script>
+</body>
+</html>

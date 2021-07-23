@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tech Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Tech Blog</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="profile.html">Profiles</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Articles
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="github.html">GitHub</a></li>
+                        <li><a class="dropdown-item" href="programDesign.html">Program Design & Algorithms</a></li>
+                        <li><a class="dropdown-item" href="coreJava.html">Core Java</a></li>
+                        <li><a class="dropdown-item" href="OOJ.html">Object-Oriented Java</a></li>
+                        <li><a class="dropdown-item" href="html.html">HTML/CSS/Bootstrap</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+<div class="backImage" style="background-image: url('https://www.fool.com.au/wp-content/uploads/2019/03/AI-circuit-board-tech-16.9.jpg');
+  background-size: cover; height:900px; padding-top:80px;">
+    <h1 id="homeTitle"> Welcome to Tech Blog</h1>
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="card bg-dark text-white" id="cardHome">
+                    <img src="https://github.blog/wp-content/uploads/2021/06/116302435-06521200-a756-11eb-837e-d46aca714d95.jpg?w=1200" class="card-img" alt="...">
+                    <a href="github.html"><div class="card-img-overlay">
+                        <h4 class="card-title">GitHub Enterprise Server 3.1</h4>
+                        <p class="card-text">GitHub Enterprise Server 3.1 is now generally available for all customers. It helps customers work with large, busy repositories, while enabling developers to develop and deploy with less effort than ever.</p>
+                        <p class="card-text">June 3, 2021</p>
+                    </div></a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card bg-dark text-white" class="cardHome">
+                    <img src="https://blogs.oracle.com/content/published/api/v1.1/assets/CONT119D694A1A2943B6AB6C5276AD6AA98E/native?cb=_cache_ac43&channelToken=7e01516d535048508dfbd81a6ea0d1ed" class="card-img" alt="...">
+                    <a href="coreJava.html"><div class="card-img-overlay">
+                        <h4 class="card-title">Announcing Java Management Service</h4>
+                        <p class="card-text">Today we are introducing a new Oracle Cloud Infrastructure (OCI) native service to help manage Java runtimes and applications on-premises or on any cloud. Java Management Service (JMS) is now generally available (GA).</p>
+                        <p class="card-text">June 8, 2021</p>
+                    </div></a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card bg-dark text-white" class="cardHome">
+                    <img src="../imgs/cssImage.png" class="card-img" alt="...">
+                    <div class="card-img-overlay">
+                        <h4 class="card-title">Using Performant Next-Gen Images in CSS with image-set</h4>
+                        <p class="card-text">The CSS image-set() function has been supported in Chromium-based browsers since 2012 and in Safari since version 6. Support recently landed in Firefox 88. Let’s dive in and see what we can and can’t do today with image-set()..</p>
+                        <p class="card-text">June 23, 2021</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Home Screen Articles-->
+<div class="container" id="extraArticles">
+    <div class="row">
+        <div class="col">
+            <div class="card bg-dark text-white">
+                <img src="https://images.newscientist.com/wp-content/uploads/2021/07/07115151/gettyimages-1194763353_web.jpg?width=778" class="card-img" alt="...">
+                <a href="https://www.newscientist.com/article/mg25033420-900-can-a-robot-ever-be-conscious-and-how-would-we-know-if-it-were/"><div class="card-img-overlay">
+                    <h5 class="card-title">Can a robot ever be conscious and how would we know if it were?</h5>
+                    <p class="card-text">Some people think we could easily build and identify a conscious robot, while others insist that it’s impossible – it all depends on what you think consciousness is.</p>
+                    <p class="card-text">July 7, 2021</p>
+                </div></a>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card bg-dark text-white">
+                <img src="https://images.newscientist.com/wp-content/uploads/2021/05/26105826/art.jpg?width=778" class="card-img" alt="...">
+                <a href="https://www.newscientist.com/article/mg25033360-900-quantum-internet-the-race-is-on-to-build-an-unhackable-online-world/"><div class="card-img-overlay">
+                    <h5 class="card-title">Quantum internet: The race is on to build an unhackable online world</h5>
+                    <p class="card-text">Great leaps are already being made in creating a super secure quantum internet. It could overturn the role of information in our lives and give us a globe-spanning quantum supercomputer</p>
+                    <p class="card-text">May 26, 2021</p>
+                </div></a>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col" id="longCol">
+            <div class="card bg-dark text-white">
+                <img src="https://images.theconversation.com/files/363412/original/file-20201014-21-1bdzny3.jpg?ixlib=rb-1.1.0&rect=124%2C455%2C3766%2C1880&q=45&auto=format&w=668&h=324&fit=crop" class="card-img" alt="...">
+                <a href="https://www.newscientist.com/article/mg25033360-900-quantum-internet-the-race-is-on-to-build-an-unhackable-online-world/"><div class="card-img-overlay">
+                    <h5 class="card-title">Ballet dancers should absolutely think about becoming computer programmers – here’s why</h5>
+                    <p class="card-text">There has been quite a backlash since the UK government launched an advert encouraging dancers to think about retraining in cyber security. The ad, which has since been withdrawn, depicted a female ballet dancer with the strapline: “Fatima’s next job could be in cyber (she just doesn’t know it yet)”, with a message below to “Rethink. Reskill. Reboot”.</p>
+                    <p class="card-text">October 14, 2020</p>
+                </div></a>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col">
+            <div class="card bg-dark text-white">
+                <img src="https://www.usnews.com/dims4/USNEWS/a5ebb22/2147483647/thumbnail/970x647/quality/85/?url=http%3A%2F%2Fmedia.beam.usnews.com%2F37%2F17%2Fe98fa74742d6b663b320d4a3e8fe%2F150109-html-stock.jpg" class="card-img" alt="...">
+                <a href="https://www.usnews.com/news/articles/2016-06-08/coding-isnt-just-for-coders-anymore"><div class="card-img-overlay">
+                    <h5 class="card-title">Coding Isn't Just for Coders Anymore</h5>
+                    <p class="card-text">Coding is key to securing a job, even outside of the tech industry, research shows.</p>
+                    <p class="card-text">June 8, 2016</p>
+                </div></a>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card bg-dark text-white">
+                <img src="https://cdn.mos.cms.futurecdn.net/aBSs4o7eAJupCvRQGcvgET-1024-80.jpg.webp" class="card-img" alt="...">
+                <a href="https://www.livescience.com/ai-designs-quantum-physics-experiments.html"><div class="card-img-overlay">
+                    <h5 class="card-title">AI designs quantum physics experiments beyond what any human has conceived</h5>
+                    <p class="card-text">Quantum physicist Mario Krenn remembers sitting in a café in Vienna in early 2016, poring over computer printouts, trying to make sense of what MELVIN had found. MELVIN was a machine-learning algorithm Krenn had built, a kind of artificial intelligence. Its job was to mix and match the building blocks of standard quantum experiments and find solutions to new problems. And it did find many interesting ones.</p>
+                    <p class="card-text">July 14, 2021</p>
+                </div></a>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card bg-dark text-white">
+                <img src="https://icdn.digitaltrends.com/image/digitaltrends/mojo-web-hero-shot-of-lens-2560x1707.jpg" class="card-img" alt="...">
+                <a href="https://www.digitaltrends.com/features/augmented-reality-contact-lenses-vision/"><div class="card-img-overlay">
+                    <h5 class="card-title">The Future of Vision: Augmented reality contact lenses will make you bionic</h5>
+                    <p class="card-text">Augmented reality contact lenses have been “around the corner” for years. They’re finally set to arrive.</p>
+                    <p class="card-text">March 2, 2021</p>
+                </div></a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>

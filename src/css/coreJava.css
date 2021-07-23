@@ -1,0 +1,45 @@
+body{
+    background-color: #7c818c;
+}
+
+.card img {
+    max-width: 1400px;
+    max-height: 600px;
+}
+
+.card-img-overlay{
+    color: white;
+    background-color: rgba(0,0,0,0.4);
+    border: 3px solid white;
+
+}
+
+#article1, #article2{
+
+    max-width:1200px;
+    max-height: 1500px;
+    margin: auto;
+    color: white;
+    background-color: rgba(0,0,0,0.4);
+    border: 3px solid white;
+    margin-top: 25px;
+
+}
+#images h4{
+    color: white;
+    padding-top: 25px;
+
+}
+#article1 a, #article2 a{
+    color: white;
+}
+
+#back{
+    text-align: center;
+    color: white;
+    background-color: rgba(0,0,0,0.4);
+    border: 3px solid white;
+    width: 25%;
+    margin: auto;
+    margin-top: 50px;
+}

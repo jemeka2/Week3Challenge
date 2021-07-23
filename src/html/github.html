@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/coreJava.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Tech Blog</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="profile.html">Profiles</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Articles
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="github.html">GitHub</a></li>
+                        <li><a class="dropdown-item" href="programDesign.html">Program Design & Algorithms</a></li>
+                        <li><a class="dropdown-item" href="coreJava.html">Core Java</a></li>
+                        <li><a class="dropdown-item" href="OOJ.html">Object-Oriented Java</a></li>
+                        <li><a class="dropdown-item" href="html.html">HTML/CSS/Bootstrap</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+<div class="superContainer">
+    <div class="container" id="images">
+        <h4 id="clickArticle">Click the Article</h4>
+        <div class="row">
+            <div class="col">
+                <div class="card bg-dark text-white" onclick="showArticle1()">
+                    <img src="https://github.blog/wp-content/uploads/2021/06/116302435-06521200-a756-11eb-837e-d46aca714d95.jpg?w=1200" class="card-img" alt="..." >
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">Enterprise Server 3.1 is here!</h5>
+                        <p class="card-text">GitHub Enterprise Server 3.1 is now generally available for all customers. It helps customers work with large, busy repositories, while enabling developers to develop and deploy with less effort than ever.</p>
+                        <p class="card-text">June 3, 2021</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card bg-dark text-white" onclick="showArticle2()">
+                    <img src="https://github.blog/wp-content/uploads/2019/09/security-1200-630.png?w=1200" class="card-img" alt="...">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">GitHub brings supply chain security features to the Go community</h5>
+                        <p class="card-text">The global Go community embraced GitHub from the beginning—both as a place to collaborate on code and a place to publish packages—leading to Go becoming one of the top 15 programming languages on GitHub today. We’re excited to announce that GitHub’s supply chain security features are now available for Go modules, which will help the Go community discover, report, and prevent security vulnerabilities.</p>
+                        <p class="card-text">July 22, 2021</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="article1">
+        <h1>GitHub Enterprise Server 3.1 is now generally available</h1>
+        <p>GitHub Enterprise Server 3.1 is now generally available for all customers. It helps customers work with large, busy repositories, while enabling developers to develop and deploy with less effort than ever.</p>
+        <p>This release includes:</p>
+        <ul>
+            <li>GitHub Actions workflow visualizations (#88): track and troubleshoot complex workflows at a glance.</li>
+            <li>Automerge pull requests (#107): automatically merge a pull request the moment it’s ready.</li>
+            <li>Repository performance optimization (#108): for large, busy repositories.</li>
+        </ul>
+        <p>Additionally, customers using GitHub Advanced Security will now benefit from the general availability of secret scanning (#106) and support for more libraries and frameworks with code scanning than ever before.</p>
+        <p>To learn more about all the new features in GitHub Enterprise Server 3.1, read the GitHub Enterprise Server 3.1 release notes or download it today.</p>
+        <p>Not using GitHub Enterprise Server already? Start a free trial to innovate faster with the platform developers you know and love.</p>
+
+        <br><br>
+        <a href="https://github.blog/2021-06-03-github-enterprise-server-3-1-is-now-generally-available/">Source: GitHub Blog</a>
+        <br>
+        <a href="https://github.blog/author/mayaross/">Author: Maya Ross</a>
+    </div>
+    <div id="article2">
+        <h1>GitHub brings supply chain security features to the Go community</h1>
+        <p>The global Go community embraced GitHub from the beginning—both as a place to collaborate on code and a place to publish packages—leading to Go becoming one of the top 15 programming languages on GitHub today. We’re excited to announce that GitHub’s supply chain security features are now available for Go modules, which will help the Go community discover, report, and prevent security vulnerabilities.</p>
+        <p>Go was created, in part, to address the problem of managing dependencies in large-scale software. GitHub is the most popular host for open-source Go modules. The features announced today will help not just GitHub users but anyone who depends on GitHub-hosted modules. We are thrilled that GitHub is investing in improvements that benefit the entire Go ecosystem, and we look forward to more collaborations with them in the future.</p>
+        <p>– Steve Francia, Product Lead: Go Language @ Google</p>
+        <p>Go modules were introduced in 2019 to make dependency management easier and version information more explicit, and according to the Go Developer Survey 2020 have gained near-universal adoption. Below, I’ll walk you through how each of GitHub’s supply chain security features works with Go modules to improve security for the Go community.</p>
+        <p><a href="https://github.blog/2021-07-22-github-supply-chain-security-features-go-community/">Find the rest at</a></p>
+
+
+        <br><br>
+        <a href="https://github.blog/2021-07-22-github-supply-chain-security-features-go-community/">Source: GitHub Blog</a>
+        <br>
+        <a href="https://github.blog/author/iamwillbar/">Author: William Bartholomew</a>
+
+    </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+<script src="../js/coreJavaPage.js"></script>
+</body>
+</html>

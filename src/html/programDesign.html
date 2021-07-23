@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/coreJava.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Tech Blog</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="profile.html">Profiles</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Articles
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="github.html">GitHub</a></li>
+            <li><a class="dropdown-item" href="programDesign.html">Program Design & Algorithms</a></li>
+            <li><a class="dropdown-item" href="coreJava.html">Core Java</a></li>
+            <li><a class="dropdown-item" href="OOJ.html">Object-Oriented Java</a></li>
+            <li><a class="dropdown-item" href="html.html">HTML/CSS/Bootstrap</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<div class="superContainer">
+
+  <div class="container" id="images">
+    <h4 id="clickArticle">Click the Article</h4>
+    <div class="row">
+      <div class="col">
+        <div class="card bg-dark text-white" onclick="showArticle1()">
+          <img src="https://davidwalsh.name/demo/JavaScriptListImage.png?preview" class="card-img" alt="..." >
+          <div class="card-img-overlay">
+            <h5 class="card-title">Fix Seeing "o" in your JSX Code</h5>
+            <p class="card-text">The early days of the web felt like the wild west when it came to coding practices -- just make it work. Then we became enlightened to better practices, separating HTML from CSS and JavaScript. Then came React and JSX, where we combine JavaScript, HTML..</p>
+            <p class="card-text">July 8, 2021</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card bg-dark text-white" onclick="showArticle2()">
+          <img src="https://blog-c7ff.kxcdn.com/blog/wp-content/uploads/2019/11/Banner-Blog-1A-1.jpg" class="card-img" alt="...">
+          <div class="card-img-overlay">
+            <h5 class="card-title">How to Create CSS Charts With Interesting Shapes, Glyphs and Emoji</h5>
+            <p class="card-text">Let’s forego the usual circles and bars we typically see used in charts for more eccentric shapes. With online presentations more and more common today, a quick way to spruce up your web slides and make them stand out is to give the charts a shapely makeover.</p>
+            <p class="card-text">June 21, 2021</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="article1">
+    <h1>Fix Seeing "0" in Your JSX Code</h1>
+    <p>The early days of the web felt like the wild west when it came to coding practices -- just make it work. Then we became enlightened to better practices, separating HTML from CSS and JavaScript. Then came React and JSX, where we combine JavaScript, HTML, and even CSS with Styled Components -- what an elegant mess we've made!</p>
+    <p>Every once in a while part of that mess is me seeing 0 displaying in the output of my JSX code, and I'm reminded why: improper handling of variable typing, combined with using &&. Let me explain!</p>
+    <p>One of the popular patterns in JSX is:</p>
+    <br>
+    <xmp><div>Some Header</div></xmp>
+    <xmp>{someValue && <div>Some header</div></xmp>
+    <br>
+    <p>The pattern makes sense but check out the difference in outputs between string and number types:</p>
+    <p><a href="https://davidwalsh.name/fix-your-jsx">Continue reading here</a></p>
+
+    <br><br>
+    <a href="https://css-tricks.com/using-performant-next-gen-images-in-css-with-image-set/">Source: DWB</a>
+    <br>
+    <a href="https://davidwalsh.name">Author: David Walsh</a>
+  </div>
+  <div id="article2">
+    <h1>7 steps to improve your data structure and algorithm skills</h1>
+    <p>Machine Learning or Blockchain might be the next big thing, but interview problem-solving is the skill of the decade.</p>
+    <p>Here is a step-by-step plan to improve your data structure and algorithm skills</p>
+    <strong>Step 1: Understand Depth vs Breadth</strong>
+    <p>We all have that friend who has solved 500 coding problems. They love to wear it as a badge of honor. But when it comes to interviews, they fail miserably. This is a very common scenario. It’s what we call the “Breadth-Only” approach. They are solely focused on solving as many problems as they can.</p>
+    <p>The Breadth-Only approach has a problem—you don’t build a strong foundation. Interviews require deep problem-solving knowledge and the ability to code fast and accurately. You only develop these skills with focused preparation.</p>
+    <p>Here’s a counter-intuitive approach that works better:</p>
+    <strong>Focus on less problems, not more</strong>
+    <p>This is comforting, right? Who wants to focus on 500 problems when you can focus on 100?</p>
+    <p>But here’s the key—you want to learn them in depth. This is where depth comes in.</p>
+    <ol>
+      <li>You can code it quickly</li>
+      <li>You can code it with correct syntax, which means you are good at the language</li>
+      <li>You can write clean code in one go, because it's second nature to you</li>
+      <li>You can apply the same code to a new problem quickly</li>
+      <li>You know the data structure you are using and can implement it if asked to</li>
+    </ol>
+    <p>To achieve this, you need to focus on a few representative problems (around 100 works well.) Solve them a few times and you’ll start seeing patterns. You also start getting better at the coding part.</p>
+    <p>So you’ve covered Depth, congratulations! You have acquired a solid base. </p>
+    <p>You can now go all out and solve as many problems as you want. And best of all, you won’t need to code many of them. Figure out a solution, and if it’s similar to one of your core problems (which it often is), you’re done. No need to actually code and debug it because you’re already good at that.</p>
+    <p><a href="https://www.hackerearth.com/blog/developers/7-steps-to-improve-your-data-structure-and-algorithm-skills/">Find the rest here</a></p>
+
+    <br><br>
+    <a href="https://www.hackerearth.com/blog/developers/7-steps-to-improve-your-data-structure-and-algorithm-skills/">Source: hackerearth</a>
+    <br>
+    <a href="https://www.hackerearth.com/blog/author/harsh-goel/?post">Author: Harsh Goel</a>
+
+  </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+<script src="../js/coreJavaPage.js"></script>
+</body>
+</html>

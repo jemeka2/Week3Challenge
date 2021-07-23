@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/coreJava.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Tech Blog</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="profile.html">Profiles</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Articles
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="github.html">GitHub</a></li>
+                        <li><a class="dropdown-item" href="programDesign.html">Program Design & Algorithms</a></li>
+                        <li><a class="dropdown-item" href="coreJava.html">Core Java</a></li>
+                        <li><a class="dropdown-item" href="OOJ.html">Object-Oriented Java</a></li>
+                        <li><a class="dropdown-item" href="html.html">HTML/CSS/Bootstrap</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+<div class="superContainer">
+    <div class="container" id="images">
+        <h4 id="clickArticle">Click the Article</h4>
+        <div class="row">
+            <div class="col">
+                <div class="card bg-dark text-white" onclick="showArticle1()">
+                    <img src="../imgs/cssImage.png" class="card-img" alt="..." >
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">Using Performant Next-Gen Images in CSS with image-set</h5>
+                        <p class="card-text">GitHub Enterprise Server 3.1 is now generally available for all customers. It helps customers work with large, busy repositories, while enabling developers to develop and deploy with less effort than ever.</p>
+                        <p class="card-text">June 23, 2021</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card bg-dark text-white" onclick="showArticle2()">
+                    <img src="../imgs/cssTricks.png" class="card-img" alt="...">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">How to Create CSS Charts With Interesting Shapes, Glyphs and Emoji</h5>
+                        <p class="card-text">Let’s forego the usual circles and bars we typically see used in charts for more eccentric shapes. With online presentations more and more common today, a quick way to spruce up your web slides and make them stand out is to give the charts a shapely makeover.</p>
+                        <p class="card-text">June 21, 2021</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="article1">
+        <h1>Using Performant Next-Gen Images in CSS with image-set</h1>
+        <p>The CSS image-set() function has been supported in Chromium-based browsers since 2012 and in Safari since version 6. Support recently landed in Firefox 88. Let’s dive in and see what we can and can’t do today with image-set().</p>
+        <strong>Multiple resolutions of the same image</strong>
+        <p>Here’s what the CSS spec has to say about image-set():</p>
+        <p>Delivering the most appropriate image resolution for a user’s device can be a difficult task. Ideally, images should be in the same resolution as the device they’re being viewed in, which can vary between users. However, other factors can factor into the decision of which image to send; for example, if the user is on a slow mobile connection, they may prefer to receive lower-res images rather than waiting for a large proper-res image to load.</p>
+        <p>It’s basically a CSS background equivalent to the HTML srcset attribute for img tags. By using image-set we can provide multiple resolutions of an image and trust the browser to make the best decision about which one to use. This can be used to specify a value for three different CSS properties: content, cursor, and most useful of all, background-image.</p>
+        <p>1x is used to identify the low-res image, while 2x is used to define the high-res image. x is an alias of dppx, which stands for dots per pixel unit.</p>
+        <p>Chrome/Edge/Opera/Samsung Internet currently require a -webkit- prefix. If you’re using Autoprefixer, this will be handled automatically. Safari no longer requires the prefix but uses an older syntax that requires a url() function to specify the image path. We could also include a regular old background-image: url() to support any browsers that don’t support image-set.</p>
+        <p>Now users on expensive fancy devices will see a super sharp image. Performance will be improved for users on slow connections or with cheaper screens as their browser will automatically request the lower-res image. If you wanted to be sure that the high-res image was used on high-res devices, even on slow connections, you could make use of the min-resolution media query instead of image-set. For more on serving sharp images to high density screens, check out Jake Archibald’s recent post over on his blog.</p>
+        <p>That’s pretty cool, but what I really want is to be able to adopt the latest image formats in CSS while still catering for older browsers…</p>
+        <p><a href="https://css-tricks.com/using-performant-next-gen-images-in-css-with-image-set/">Read the rest here</a></p>
+
+
+        <br><br>
+        <a href="https://css-tricks.com/using-performant-next-gen-images-in-css-with-image-set/">Source: CSS-TRICKS</a>
+        <br>
+        <a href="https://css-tricks.com/author/olliew/">Author: Ollie Williams</a>
+    </div>
+    <div id="article2">
+        <h1>How to Create CSS Charts With Interesting Shapes, Glyphs and Emoji</h1>
+        <p>Let’s forego the usual circles and bars we typically see used in charts for more eccentric shapes. With online presentations more and more common today, a quick way to spruce up your web slides and make them stand out is to give the charts a shapely makeover</p>
+        <p>I’ll show you how to create charts with interesting shapes using glyphs, CSS shapes, and emojis with minimal effort.</p>
+        <p>Let’s start with a simple example.</p>
+        <p>We first give the chart some dimensions and stack the two div inside it by assigning them to the same grid cell. They can be stacked up using any other way, too — with position property, for instance.</p>
+        <p>Look at the HTML above one more time. One of the divs has a pentagon symbol — the chart shape we want. I added that symbol using the “Emoji and Symbols” keyboard, though it can also be done with the HTML entity value for pentagon, &#x2B20;, inside the div.</p>
+        <p>The div with the symbol is then styled with CSS font properties as well as a desired chart color. It’s large enough and centered.</p>
+        <p><a href="https://css-tricks.com/how-to-create-css-charts-with-interesting-shapes-glyphs-and-emoji/">Find the rest here</a></p>
+
+        <br><br>
+        <a href="https://github.blog/2021-07-22-github-supply-chain-security-features-go-community/">Source: CSS-TRICKS</a>
+        <br>
+        <a href="https://css-tricks.com/author/preethisamathanam/">Author: Preethi</a>
+
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+<script src="../js/coreJavaPage.js"></script>
+</body>
+</html>

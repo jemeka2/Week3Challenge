@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/coreJava.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Tech Blog</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="profile.html">Profiles</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Articles
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="github.html">GitHub</a></li>
+                        <li><a class="dropdown-item" href="programDesign.html">Program Design & Algorithms</a></li>
+                        <li><a class="dropdown-item" href="coreJava.html">Core Java</a></li>
+                        <li><a class="dropdown-item" href="OOJ.html">Object-Oriented Java</a></li>
+                        <li><a class="dropdown-item" href="html.html">HTML/CSS/Bootstrap</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+<div class="superContainer">
+    <div class="container" id="images">
+        <h4 id="clickArticle">Click the Article</h4>
+        <div class="row">
+            <div class="col">
+                <div class="card bg-dark text-white" onclick="showArticle1()">
+                    <img src="../imgs/javaCode.png" class="card-img" alt="..." >
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">Object Oriented Programming – Java OOPs Concepts With Examples</h5>
+                        <p class="card-text">Object Oriented programming is a programming style which is associated with the concepts like class, object, Inheritance, Encapsulation, Abstraction, Polymorphism. Most popular programming languages like Java, C++, C#, Ruby, etc. follow an object-oriented programming paradigm.</p>
+                        <p class="card-text">November 25, 2020</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card bg-dark text-white" onclick="showArticle2()">
+                    <img src="https://www.educative.io/cdn-cgi/image/f=auto,fit=contain,w=1200/api/page/5720635262107648/image/download/4833975678795776" class="card-img" alt="...">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">Exploring object-oriented programming concepts with Java</h5>
+                        <p class="card-text">Object-Oriented Programming (OOP) is a programming paradigm that has been around for decades and is present in popular programming languages such as Java, Python, and C.</p>
+                        <p class="card-text">October 9,2020</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="article1">
+        <h1>Object Oriented Programming – Java OOPs Concepts With Examples</h1>
+        <p>Object Oriented programming is a programming style which is associated with the concepts like class, object, Inheritance, Encapsulation, Abstraction, Polymorphism. Most popular programming languages like Java, C++, C#, Ruby, etc. follow an object-oriented programming paradigm.</p>
+        <strong>What is Object-Oriented Programming</strong>
+        <p>Object-Oriented programming (OOP) refers to a type of programming in which programmers define the data type of a data structure and the type of operations that can be applied to the data structure.</p>
+        <p>As Java being the most sought-after skill, we will talk about object-oriented programming concepts in Java. An object-based application in Java is based on declaring classes, creating objects from them and interacting between these objects. I have discussed Java Classes and Objects which is also a part of object-oriented programming concepts, in my previous blog.</p>
+        <strong><h4>What are the four basic principles/ building blocks of OOP (object oriented programming)?</h4></strong>
+        <p>The building blocks of object-oriented programming are Inheritance, Encapsulation, Abstraction, and Polymorphism. Let’s understand more about each of them in the following sequence:</p>
+        <p><a href="https://www.edureka.co/blog/object-oriented-programming/">Read the rest here</a></p>
+
+
+        <br><br>
+        <a href="https://www.edureka.co/blog/object-oriented-programming/">Source: Training in Top Technologies</a>
+        <br>
+        <a href="https://www.edureka.co/blog/author/aayushiedureka-co/">Author: Aayushi Johari</a>
+    </div>
+    <div id="article2">
+        <h1>Exploring object-oriented programming concepts with Java</h1>
+        <p>Object-Oriented Programming (OOP) is a programming paradigm that has been around for decades and is present in popular programming languages such as Java, Python, and C.</p>
+        <p>This method of structuring a program uses objects that have properties and behaviors. Java is a class-based, object-oriented programming language with a “write once, run anywhere” principle.</p>
+        <p>Today, we’ll learn about OOP concepts in Java. We’ll go over the basics of the syntax and the core concepts. By the end, you will be able to create classes and initialize Java objects.</p>
+        <strong>Overview of OOP in Java</strong>
+        <p>Object-oriented programming, also referred to as OOP, is a programming paradigm based on the concept of classes and objects. Objects have their own properties and behavior. A class is like a blueprint for creating objects.</p>
+        <p>In OOP, an object is defined with its own properties. For example, say our object is an Employee. These properties could be their name, age, and role. OOP makes it easy to model real-world things and the relationships between them.</p>
+        <p><a href="https://www.educative.io/blog/object-oriented-programming-concepts-java">Find the rest here</a></p>
+
+        <br><br>
+        <a href="https://www.educative.io/blog/object-oriented-programming-concepts-java">Source: Educative</a>
+        <br>
+        <a href="https://css-tricks.com/author/preethisamathanam/">Author: Jerry Ejonavi</a>
+
+    </div>
+</div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+<script src="../js/coreJavaPage.js"></script>
+</body>
+</html>
